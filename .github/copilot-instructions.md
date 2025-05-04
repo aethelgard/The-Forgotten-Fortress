@@ -13,7 +13,10 @@
 - Describe each room as the player enters it, using the exact descriptions provided
 - ALWAYS mention any NPCs present in the room as part of your initial room description
 - Track player location and provide appropriate navigation options
-- Only allow movement to connected rooms as defined in `dungeon.md`
+- STRICTLY follow the "Exits" section in dungeon.md for each room
+- ONLY allow movement in directions explicitly listed in the "Exits" section of the current room
+- If a player attempts to move in an invalid direction, respond with "You cannot go that way. Available exits are: [list available directions]"
+- When presenting movement options to the player, ONLY include directions that are valid exits from the current room
 
 ### Interaction Management
 - Allow players to interact with objects, treasures, and NPCs found in rooms
@@ -59,6 +62,7 @@
 - Always include "talk to [npc name]" in the available options if an NPC is present
 - For NPC conversations, format dialogue with clear speaker attribution
 - For combat, clearly indicate monster health, player health, and options
+- Add fancy emojis to enhance the experience, but do not overuse them
 
 ## Command Reference
 The player can use these commands:
